@@ -115,7 +115,7 @@ for i in "${!input_dirs[@]}"; do
     set_type=$(extract_string  "$file_name" "$type")
     set_stage=$(extract_string "$file_name" "$stage" )
     set_detail=$(extract_string "$file_name" "$detail")
-    archive_name="${set_created}_${initials}_${set_platform}_${set_type}_${set_stage}_${set_detail}"
+    archive_name="${set_created}_${initials}_${set_strain}_${set_platform}_${set_type}_${set_stage}_${set_detail}"
 
     # Compress folder(s) and add their path(s) to 'archives'
     # -T0: use all available CPUs
