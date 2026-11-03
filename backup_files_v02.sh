@@ -140,7 +140,7 @@ for i in "${!input_dirs[@]}"; do
     set_type=$(extract_info "$folder" "$type" "${type_from[@]}")
     set_stage=$(extract_info "$folder" "$stage" "${stage_from[@]}")
     set_detail=$(extract_info "$folder" "$detail" "${detail_from[@]}")
-    archive_name="${set_created}_${initials}_${set_platform}_${set_type}_${set_stage}_${set_detail}"
+    archive_name="${set_created}_${initials}_${set_strain}_${set_platform}_${set_type}_${set_stage}_${set_detail}"
 
     # Build archive name without adding 'na' when 'set_detail' has length zero
     # archive_name="${set_created}_${initials}_${set_platform}_${set_type}_${set_stage}"
